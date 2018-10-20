@@ -6,6 +6,8 @@ osx_image: xcode10
 language: objective-c
 # cache: cocoapods
 podfile: Example/Podfile
+notifications:
+    slack: ducminh1012:aHTGjsJLvIzaP6QtEMCyrTh4
 before_install:
 # - gem install cocoapods # Since Travis is not always on latest version
 - cd Example
