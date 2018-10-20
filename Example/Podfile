@@ -6,7 +6,5 @@ target 'MIKit_Example' do
   target 'MIKit_Tests' do
     inherit! :search_paths
 
-    pod 'Quick'
-    pod 'Nimble'
   end
 end
