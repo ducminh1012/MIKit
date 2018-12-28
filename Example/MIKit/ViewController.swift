@@ -11,6 +11,8 @@ import MIKit
 
 class ViewController: UIViewController {
 
+    var nilOrEmptyValue: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,6 +25,9 @@ class ViewController: UIViewController {
         let now = Date()
         
         print("Now is \(now.toString())")
+        
+        print(nilOrEmptyValue)
+        print(nilOrEmptyValue.isNilOrEmpty)
     }
 
     override func didReceiveMemoryWarning() {
