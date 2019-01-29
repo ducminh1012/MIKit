@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Int
+public extension Int
 {
     static func random(range: Range<Int> ) -> Int
     {

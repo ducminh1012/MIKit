@@ -28,6 +28,9 @@ class ViewController: UIViewController {
         
         print(nilOrEmptyValue)
         print(nilOrEmptyValue.isNilOrEmpty)
+        
+        let colorFromHex = UIColor(hex: "#4286f4")
+        view.backgroundColor = colorFromHex
     }
 
     override func didReceiveMemoryWarning() {

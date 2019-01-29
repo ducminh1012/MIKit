@@ -1,6 +1,6 @@
 import Foundation
 
-extension String {
+public extension String {
     public func toDate() -> Date {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd/MM/yyyy" //Your date format

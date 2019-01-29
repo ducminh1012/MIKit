@@ -6,7 +6,7 @@
 //
 import Foundation
 
-extension UIApplication {
+public extension UIApplication {
     public static func topViewController(base: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
         if let nav = base as? UINavigationController {
             return topViewController(base: nav.visibleViewController)
