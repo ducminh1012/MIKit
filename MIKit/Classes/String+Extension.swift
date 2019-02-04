@@ -25,4 +25,12 @@ public extension String {
         
         return date ?? Date()
     }
+    
+    func toURL() -> URL? {
+        return URL(string: self)
+    }
+    
+    func toFileURL() -> URL? {
+        return URL(fileURLWithPath: self)
+    }
 }
