@@ -29,14 +29,10 @@ class ViewController: UIViewController {
         print(nilOrEmptyValue)
         print(nilOrEmptyValue.isNilOrEmpty)
         
-        let colorFromHex = UIColor(hex: "#4286f4")
-        view.backgroundColor = colorFromHex
+//        let colorFromHex = UIColor(hex: "#4286f4")
+//        view.backgroundColor = colorFromHex
+        
+        self.showSharePopup(image: UIImage())
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
 
