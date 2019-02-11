@@ -10,7 +10,13 @@ import Foundation
 public extension UIViewController {
     func showSharePopup(image: UIImage?, text: String? = nil) {
         // set up activity view controller
-        var items = [image, text].compactMap({$0})
+        var items = [Any]()
+        if let image = image {
+            items.append(image)
+        }
+        if let text = text {
+            items.append(text)
+        }
         
         let activityVC = UIActivityViewController(activityItems: items, applicationActivities: nil)
         activityVC.popoverPresentationController?.sourceView = self.view // so that iPads won't crash

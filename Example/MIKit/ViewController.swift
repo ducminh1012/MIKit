@@ -22,17 +22,22 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        let now = Date()
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        view.backgroundColor = UIColor.red
         
-        print("Now is \(now.toString())")
+        self.view.addSubview(view)
         
-        print(nilOrEmptyValue)
-        print(nilOrEmptyValue.isNilOrEmpty)
+        let button = UIButton(frame: CGRect(x: 300, y: 200, width: 100, height: 50))
+        button.backgroundColor = UIColor.green
+        button.addTapGestureRecognizer {
+            
+            view.fadeOut(animation: false, duration: 0, delay: 0, completion: {_ in
+                
+            })
+        }
         
-//        let colorFromHex = UIColor(hex: "#4286f4")
-//        view.backgroundColor = colorFromHex
+        self.view.addSubview(button)
         
-        self.showSharePopup(image: UIImage())
     }
 }
 
