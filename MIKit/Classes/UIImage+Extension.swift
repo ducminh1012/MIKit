@@ -23,4 +23,16 @@ extension UIImage {
         
         return UIColor(red: CGFloat(bitmap[0]) / 255, green: CGFloat(bitmap[1]) / 255, blue: CGFloat(bitmap[2]) / 255, alpha: CGFloat(bitmap[3]) / 255)
     }
+    
+    class func imageWithColor(color: UIColor) -> UIImage {
+        let rect = CGRect(origin: .zero, size: CGSize(width: 1, height: 1))
+        UIGraphicsBeginImageContextWithOptions(rect.size, false, 0.0)
+        color.setFill()
+        UIRectFill(rect)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        guard let cgImage = image?.cgImage else { return UIImage() }
+        return UIImage(cgImage: cgImage)
+    }
 }
