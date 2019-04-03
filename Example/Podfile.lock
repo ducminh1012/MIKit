@@ -1,0 +1,16 @@
+PODS:
+  - MIKit (0.5.0)
+
+DEPENDENCIES:
+  - MIKit (from `../`)
+
+EXTERNAL SOURCES:
+  MIKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MIKit: 6ae52e3da0d47af34c49d578d1d44b81a9839bb1
+
+PODFILE CHECKSUM: 25955026025b3ebfe07cbe70aecf51162b00d0d6
+
+COCOAPODS: 1.6.1
