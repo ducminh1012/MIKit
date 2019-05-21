@@ -23,9 +23,8 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        if let value = nilOrEmptyValue.and(nil2) {
-            
-        }
+        let arr = [1,2,3,4]
+        arr[safe: 1]
     }
 }
 
